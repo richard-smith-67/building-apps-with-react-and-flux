@@ -7,10 +7,10 @@
 
 $ = jQuery = require('jquery');
 var React = require('react');
-var Home = require('./components/homePage.jsx');
-var About = require('./components/about/aboutPage.jsx');
-var Header = require('./components/common/header.jsx');
-var Authors = require('./components/authors/authorsPage.jsx');
+var Home = require('./components/homePage');
+var About = require('./components/about/aboutPage');
+var Header = require('./components/common/header');
+var AuthorPage = require('./components/authors/authorPage');
 
 //use IIFE to keep all this stuff off global scope
 (function(win){
@@ -22,7 +22,7 @@ var Authors = require('./components/authors/authorsPage.jsx');
 
             switch(this.props.route){
                 case 'about': Child = About; break;
-                case 'authors': Child = Authors; break;
+                case 'authors': Child = AuthorPage; break;
                 default: Child = Home;
             }
 
@@ -44,7 +44,3 @@ var Authors = require('./components/authors/authorsPage.jsx');
     render();
 
 })(window);
-
-
-
-//React.render(<Home/>, document.getElementById('app'));
