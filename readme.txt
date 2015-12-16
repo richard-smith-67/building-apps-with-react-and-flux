@@ -1,0 +1,1 @@
+http://app.pluralsight.com/training/player?course=react-flux-building-applications&author=cory-house&name=react-flux-building-applications-m1&clip=4&mode=live
