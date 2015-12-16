@@ -8,7 +8,8 @@ var DefaultRoute = Router.DefaultRoute;
 var Route = Router.Route;
 
 //if the path is not explicitly named below then React just assumes that the name of the route
-//corresponds to the url i.e. http://.../about will load the about component
+//and the url to the component are the same. The name of the route just gives us a handle to
+//reference it by throughout the app
 var routes = (
     <Route name="app" path="/" handler={require('./components/app')}>
         <DefaultRoute handler={require('./components/homePage')} />
