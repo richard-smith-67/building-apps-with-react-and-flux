@@ -10,6 +10,7 @@ var React = require('react');
 var Home = require('./components/homePage.jsx');
 var About = require('./components/about/aboutPage.jsx');
 var Header = require('./components/common/header.jsx');
+var Authors = require('./components/authors/authorsPage.jsx');
 
 //use IIFE to keep all this stuff off global scope
 (function(win){
@@ -21,6 +22,7 @@ var Header = require('./components/common/header.jsx');
 
             switch(this.props.route){
                 case 'about': Child = About; break;
+                case 'authors': Child = Authors; break;
                 default: Child = Home;
             }
 
